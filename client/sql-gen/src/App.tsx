@@ -1,5 +1,6 @@
-import SQLQueryGenerator from "./SqlQueryGenerator";
+
 import './App.css'
+import SQLQueryGenerator from './SQLQueryGenerator';
 function App() {
   return (
     <>
