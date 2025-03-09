@@ -18,7 +18,7 @@ export default function SQLQueryGenerator() {
     setLoading(true);
     try {
       const response = await axios.post<{ query: string }>(
-        "http://localhost:3001/generate-query",
+        "https://sqlquerygenerator-uzkx.onrender.com/generate-query",
         { prompt }
       );
       setQuery(
