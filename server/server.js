@@ -43,11 +43,10 @@ async function generateSQL(prompt) {
   }
 
   const aiPrompt = `
-  Generate a highly optimized, production-ready SQL query based on the following prompt: "${prompt}". 
+  Generate a highly optimized, production-ready Postgres SQL query based on the following prompt: "${prompt}". 
   Here is the schema information: ${schemaInfo} 
   
   **Ensure the query follows these guidelines:**
-  - Use **WITH (NOLOCK)** for all applicable tables in SELECT statements to improve concurrency and reduce locking issues.
   - Ensure indexes are considered in JOIN conditions.
   - Optimize query execution by avoiding unnecessary subqueries or redundant conditions.
   - Follow best practices for performance, including proper use of indexing, CTEs, and appropriate filtering.
